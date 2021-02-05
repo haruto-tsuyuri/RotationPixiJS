@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "noStrictGenericChecks": true
+  },
+  "files": [
+    "src/modules/sample.ts",
+    "src/modules/character.ts",
+    "webpack.config.ts",
+  ]
+}

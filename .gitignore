@@ -1,0 +1,8 @@
+# ignore vscode setting.
+.vs/
+# ignore local images.
+images/
+
+node_modules/
+# ignore .idea setting.
+.idea/
