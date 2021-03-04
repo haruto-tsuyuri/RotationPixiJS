@@ -10,8 +10,8 @@
     "noStrictGenericChecks": true
   },
   "files": [
-    "src/modules/sample.ts",
-    "src/modules/character.ts",
-    "webpack.config.ts",
+    "src/modules/test.ts",
+    "src/modules/pixiManager.ts",
+    "src/modules/pixiMaker.ts"
   ]
 }

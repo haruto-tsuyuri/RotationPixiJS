@@ -1,0 +1,42 @@
+doctype html
+- const friends = 10
+- const user = {description: 'foo bar baz'}
+- const authorised = false
+html(lang='ja')
+    include _head
+    body
+        label
+            input(
+                type='checkbox'
+                name='agreement'
+                checked
+            )
+        case friends
+            when 0
+                -break
+            when 1
+                p you have a friend
+            default
+                p you have #{friends} friend.
+        p
+            = 'This code is <escaped>!'
+        p(style='background: blue')= 'A message with something.'
+        #user
+            if user.description
+                h2.green Description
+                //- '=' head do not space.
+                //- ' p.description = user.description ' incorrect, is not work.
+                //- ' p.description= user.description ' correct, is work.
+                p.description= user.description
+            else if authorised
+                h2.blue Description
+                p.discription.
+                    User description is empty,
+                    please add description.
+            else
+                h2.red Description
+                p.description User has no description.
+        footer#footer
+            p Created by Tsuyuri.
+            p Test.
+

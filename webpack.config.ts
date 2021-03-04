@@ -4,10 +4,11 @@ import * as glob from "glob";
 
 const entries = glob.sync("./src/modules/*.ts"); // get all js file in modules directory
 
+// webpack rules
 const rules: webpack.RuleSetRule[] =
     [
         {
-            test: /\.ts$/, // ローダーを設定するファイル名、この場合全Typescriptファイル
+            test: /\.ts$/, // loaded file extension
             use: "ts-loader", // use ts-loader transpile
         }
     ];
@@ -17,6 +18,7 @@ const module: webpack.RuleSetRule = {
     rules: rules
 };
 
+// webpack configuration
 const config: webpack.Configuration = {
     entry: entries,
     output: {

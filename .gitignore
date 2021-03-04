@@ -2,7 +2,7 @@
 .vs/
 # ignore local images.
 images/
-
+# node_modules directory.
 node_modules/
 # ignore .idea setting.
 .idea/

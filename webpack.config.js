@@ -6,7 +6,7 @@ var entries = glob.sync("./src/modules/*.ts");
 var rules = [
     {
         test: /\.ts$/,
-        use: "ts-loader"
+        use: "ts-loader",
     }
 ];
 var module = {
@@ -16,11 +16,12 @@ var config = {
     entry: entries,
     output: {
         filename: "main.js",
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),
     },
     module: module,
     mode: 'development',
     cache: true
 };
+// module.exports = config;
 exports["default"] = config;
-//# sourceMappingURL=webpack.config.js.map
+// # sourceMappingURL = webpack.config.js.map
