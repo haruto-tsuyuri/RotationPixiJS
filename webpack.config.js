@@ -3,7 +3,7 @@ exports.__esModule = true;
 var path = require("path");
 var glob = require("glob");
 var constants_1 = require("ts-loader/dist/constants");
-var entries = glob.sync("./src/modules/*.ts"); // get all js file in modules directory
+var entries = glob.sync("./src/modules/*.ts");
 
 var rules = [
     {
