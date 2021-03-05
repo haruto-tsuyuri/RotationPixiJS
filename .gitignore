@@ -1,8 +1,20 @@
 # ignore vscode setting.
 .vs/
+
 # ignore local images.
 images/
+
 # node_modules directory.
 node_modules/
+
 # ignore .idea setting.
 .idea/
+
+# pug directory.
+src/pug/
+
+# build files.
+src/build/
+
+# css.
+src/css/
