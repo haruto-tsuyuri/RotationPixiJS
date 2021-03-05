@@ -1,0 +1,27 @@
+.questSelect_questList-event {
+  margin-top: 10px;
+}
+
+.questSelect_questList-event {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.questSelect_questList {
+  margin-top: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, dl, dt, dd, a, div, span {
+  font-size: 1.3rem;
+}
+
+/* font-size: 1.6rem; */
+/* font-weight: normal; */
+body {
+  margin: 12px;
+}
+
+.questSelect_questListItem {
+  border-width: 15px;
+  border-style: solid;
+}

@@ -32,8 +32,12 @@
   "scripts": {
     "tsc": "tsc",
     "build": "webpack",
-    "sass-watch": "sass --watch ./src/css/test.sass ./src/build/main.css"
+    "sass-watch": "sass --watch ./src/css/test.sass ./src/build/main.css",
+    "typedoc": "typedoc --out ./docs/ ./src/"
   },
+  "keywords": [
+    "typedoc"
+  ],
   "devDependencies": {
     "glob": "^7.1.3",
     "lodash": "^4.17.20",
