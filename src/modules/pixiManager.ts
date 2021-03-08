@@ -197,12 +197,12 @@ export class PixiManager implements PixiProperty, SpriteProperty {
 
     /**
      * Returns convert angle in radian.
-     * @param currentAngle
+     * @param angle
      * @protected
      * @return number Radian of angle
      */
-    protected getRadian(currentAngle: number): number {
-        return currentAngle * (Math.PI / 180);
+    protected getRadian(angle: number): number {
+        return angle * (Math.PI / 180);
     }
 
     /**
@@ -230,12 +230,15 @@ export class PixiManager implements PixiProperty, SpriteProperty {
      * @public
      */
     public sortSprites() {
+        // First index of character Sprite.
+        const firstCharacterSprite = this.characterSprites.filter(x => typeof x !== undefined).shift();
+
         switch (true) {
-            case (this.characterSprites[0].x < this.baseLocationX): // left swap
+            case (firstCharacterSprite.x < this.baseLocationX): // left swap
                 let last = this.characterSprites.pop();
                 this.characterSprites.unshift(last);
                 break;
-            case (this.characterSprites[0].x > this.baseLocationX): // right swap
+            case (firstCharacterSprite.x > this.baseLocationX): // right swap
                 let first = this.characterSprites.shift();
                 this.characterSprites.push(first);
                 break;
