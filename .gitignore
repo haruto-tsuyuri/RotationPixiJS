@@ -18,3 +18,6 @@ src/build/
 
 # css.
 src/css/
+
+# local static files
+dist/
